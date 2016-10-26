@@ -1,8 +1,10 @@
 import javax.swing.*;
 import java.awt.*;
+
 public class Grafik extends JPanel {
 
 private int width = 100;
+private int height = 100;
 private int d = 50; //diameter
 private int x = 0; //width
 private int y = 0; //height
@@ -40,7 +42,7 @@ public static void main(String[] args) {
 		frame.setLocation(300,300);
 		frame.setDefaultCloseOperation(3);
 		frame.add(grafik);
-		frame.setTitle("Mitt fï¿½rsta grundlï¿½ggande spel");
+		frame.setTitle("Mitt första grundläggande spel");
 	    frame.setResizable(false);
 		frame.setVisible(true);	
 		

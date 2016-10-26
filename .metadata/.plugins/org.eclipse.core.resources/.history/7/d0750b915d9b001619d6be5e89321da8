@@ -1,0 +1,49 @@
+
+
+import java.util.Scanner;
+
+public class Main { 
+	
+	 public static void main(String [] args){
+		    int dator;
+		    int spelare;
+		 
+		   
+		    String[] alternativ = {"Sten", "Sax", "Påse"};
+
+		    Scanner in = new Scanner(System.in);
+		    System.out.print("0: STEN, 1: SAX 2: PÅSE, Enter 0-2 ");
+		    Scanner keyboard = new Scanner(System.in);
+
+
+		   Scanner spelarval = new Scanner(System.in);
+		   spelare = spelarval.nextInt();
+		   spelarval.close();
+		   dator = (int) (Math.random()*3);
+           
+		    
+		   Scanner datorval = new Scanner(System.in);
+		   dator = datorval.nextInt();
+		   datorval.close();
+		   spelare = (int)  (Math.random()*1);
+		   
+		   Math.random();
+		   
+		     if (spelare>dator) {
+		     System.out.println("DU VANN!");
+
+		     }
+
+		     else if (dator<spelare){
+		         System.out.print("Du förlorade!");
+
+		     }
+
+		         else if (spelare == dator){
+		            System.out.print("OAVGJORT!");
+
+		         }
+		   }
+	 }
+	 
+	 
